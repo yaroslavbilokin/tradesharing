@@ -1,0 +1,35 @@
+@import '../../global/_palette.scss';
+
+.faq-container {
+  padding: 100px 100px 160px;
+  display: flex;
+
+  .title {
+    width: 45%;
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(
+        100.19deg,
+        rgb(0 148 255 / 20%) 0%,
+        rgb(0 211 57 / 20%) 43.85%,
+        rgb(147 255 0 / 20%) 85.91%
+      ),
+      #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .faq-content {
+    width: 55%;
+    flex: 0 1 55%;
+    max-width: 55%;
+
+    .accordion-wrapper {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

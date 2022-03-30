@@ -1,0 +1,11 @@
+@import './global/_palette.scss';
+
+.app-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.app-content {
+  padding-top: 100px;
+  color: white;
+}

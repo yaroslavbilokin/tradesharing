@@ -1,0 +1,74 @@
+@import '../../global/_palette.scss';
+
+.why-trade-sharing__container {
+  padding: 100px 100px 36px;
+
+  .why-trade-sharing__title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(
+        100.19deg,
+        rgb(0 148 255 / 20%) 0%,
+        rgb(0 211 57 / 20%) 43.85%,
+        rgb(147 255 0 / 20%) 85.91%
+      ),
+      #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .why-trade-sharing__subtitle {
+    color: $dark-grey;
+    max-width: 695px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: auto auto 80px;
+  }
+
+  .why-trade-sharing__reasons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .reason-container {
+      width: 526px;
+      border-radius: 24px;
+      border: 1px solid $stroke;
+      padding: 40px;
+      margin-bottom: 24px;
+      background-color: $grey;
+      display: flex;
+      align-items: center;
+
+      .reason-icon__container {
+        width: 132px;
+        height: 132px;
+        border-radius: 100%;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 54px;
+      }
+
+      .reason-content {
+        max-width: 310px;
+
+        .title {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+
+        .subtitle {
+          font-size: 18px;
+          font-weight: 500;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}

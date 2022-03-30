@@ -1,0 +1,112 @@
+@import '../../global/_palette.scss';
+
+.banner-container {
+  padding: 120px 100px 60px 100px;
+
+  .banner-content {
+    display: flex;
+    margin-bottom: 140px;
+
+    .left-block {
+      width: 50%;
+
+      .title-container {
+        max-width: 550px;
+        margin-bottom: 60px;
+
+        .title-content {
+          font-size: 60px;
+          font-weight: 900;
+
+          .highlighted {
+            color: yellow;
+          }
+
+          .usual {
+            background: linear-gradient(
+                100.19deg,
+                rgba(0, 148, 255, 0.2) 0%,
+                rgba(0, 211, 57, 0.2) 43.85%,
+                rgba(147, 255, 0, 0.2) 85.91%
+              ),
+              #ffffff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+
+      .join-waitlist-btn__container {
+        text-decoration: none;
+
+        .join-waitlist {
+          padding: 16px 28px;
+          border-radius: 6px;
+          z-index: 1;
+          cursor: pointer;
+          position: relative;
+          font-size: 14px;
+          font-weight: 900;
+          color: $black;
+          background: $green;
+          width: max-content;
+
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 6px;
+            z-index: -1;
+            background: linear-gradient(93.5deg, #a7e0ff 0.5%, #a9ffd9 91.3%),
+              #d5fc9b;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .right-block {
+      width: 50%;
+    }
+  }
+
+  .statistic-container {
+    background-color: $grey;
+    border-radius: 24px;
+    border: 1px solid $stroke;
+    padding: 60px 100px;
+    display: flex;
+
+    .statistic-block {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      .statistic-block__icon {
+        margin-right: 32px;
+      }
+
+      .statistic-block__content {
+        .value {
+          font-size: 38px;
+          font-weight: 700;
+          margin-bottom: 12px;
+        }
+
+        .text {
+          font-size: 18px;
+          color: $dark-grey;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

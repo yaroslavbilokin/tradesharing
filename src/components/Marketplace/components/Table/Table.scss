@@ -1,0 +1,114 @@
+@import '../../../../global/_palette.scss';
+
+.table-container {
+  border-radius: 24px;
+  background-color: $grey;
+  border: 1px solid $stroke;
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .table-header {
+      .header-row {
+        .row-cell {
+          font-size: 18px;
+          font-weight: 700;
+          color: $dark-grey;
+          padding: 22px 0;
+          width: 14.2%;
+          border-bottom: 1px solid $stroke;
+
+          .row-cell__content {
+            display: flex;
+            justify-content: center;
+          }
+
+          &.name-cell {
+            padding-left: 40px;
+
+            .row-cell__content {
+              justify-content: flex-start;
+            }
+          }
+
+          .cell-title {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+
+    .table-row {
+      .table-row__cell {
+        font-size: 18px;
+        font-weight: 500;
+        color: $white;
+        text-align: center;
+        padding: 32px 0;
+        border-bottom: 1px solid $stroke;
+
+        &.name-cell {
+          text-align: start;
+          padding-left: 40px;
+        }
+      }
+
+      &:nth-child(odd) {
+        .table-row__cell {
+          background-color: $black;
+        }
+      }
+
+      &:last-child {
+        .table-row__cell {
+          border: none;
+
+          &:first-child {
+            border-bottom-left-radius: 24px;
+          }
+
+          &:last-child {
+            border-bottom-right-radius: 24px;
+          }
+        }
+      }
+
+      .rent-account-btn__container {
+        text-decoration: none;
+
+        .rent-account-btn {
+          position: relative;
+          padding: 10px 16px;
+          font-size: 14px;
+          font-weight: 900;
+          color: $black;
+          background: $green;
+          border-radius: 6px;
+          width: max-content;
+          z-index: 1;
+          cursor: pointer;
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 6px;
+            z-index: -1;
+            background: linear-gradient(93.5deg, #a7e0ff 0.5%, #a9ffd9 91.3%),
+              #d5fc9b;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
