@@ -17,8 +17,11 @@
     padding: 24px 0 24px 100px;
   }
 
-  .waitlist-btn__container {
-    padding: 0 100px 0 75px;
+  .controls-container {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    padding: 0 100px 0 0;
 
     .waitlist-btn {
       display: flex;

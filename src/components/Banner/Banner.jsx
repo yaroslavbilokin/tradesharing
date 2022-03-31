@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import binanceIcon from '../../global/media/binance-statistic-image.svg';
 import tetherIcon from '../../global/media/tether-statistic-icon.svg';
+import bannerGif from '../../global/media/banner.gif';
 import './Banner.scss';
 
 const Banner = () => {
@@ -37,7 +38,11 @@ const Banner = () => {
             </div>
           </a>
         </div>
-        <div className="right-block">Right Block</div>
+        <div className="right-block">
+          <div className="banner-gif__container">
+            <img src={bannerGif} alt="banner gif" />
+          </div>
+        </div>
       </div>
       <div className="statistic-container">
         <div className="statistic-block">

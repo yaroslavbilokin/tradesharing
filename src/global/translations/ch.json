@@ -1,0 +1,126 @@
+{
+  "translation": {
+    "Header": {
+      "joinWaitlist": "Join the waitlist",
+      "navigationItems": {
+        "howItWorks": "How it works",
+        "marketPlace": "Marketplace",
+        "whyTradeSharing": "Why TradeSharing",
+        "FAQ": "FAQ"
+      },
+      "languagesSwitcher": {
+        "en": "English",
+        "ch": "Chinese"
+      }
+    },
+    "Banner": {
+      "title": "It is /Chinese/ translation",
+      "joinWaitlistBtnTitle": "Join the waitlist",
+      "statistic": {
+        "binanceAccountsTitle": "Binance accounts",
+        "purchasingPowerTitle": "Monthly purchasing power"
+      }
+    },
+    "HowItWorks": {
+      "title": "How it works",
+      "steps": {
+        "1": {
+          "title": "1. Find owners",
+          "subTitle": "Filter the marketplace to find the accounts that fit your needs"
+        },
+        "2": {
+          "title": "2. Fund the escrow",
+          "subTitle": "Send collateral funds to create a reserve in case your trade close in negative"
+        },
+        "3": {
+          "title": "3. Trade in real-time",
+          "subTitle": "Control rental accounts from one single connection. Via API or web."
+        },
+        "4": {
+          "title": "4. Collect Profit",
+          "subTitle": "Your trade closed with profit? collect profit from the escrow and withdraw the reserve"
+        }
+      }
+    },
+    "Marketplace": {
+      "title": "Marketplace",
+      "table": {
+        "header": {
+          "user": {
+            "title": "User",
+            "tooltipTitle": "User"
+          },
+          "exchange": {
+            "title": "Exchange",
+            "tooltipTitle": "Exchange"
+          },
+          "crypto": {
+            "title": "Crypto",
+            "tooltipTitle": "Crypto"
+          },
+          "limits": {
+            "title": "Limits",
+            "tooltipTitle": "Limits"
+          },
+          "escrow": {
+            "title": "Escrow",
+            "tooltipTitle": "Escrow"
+          },
+          "rentRate": {
+            "title": "Hourly rent rate",
+            "tooltipTitle": "Hourly rent rate"
+          }
+        },
+        "rentAccountBtnTitle": "Rent the account"
+      }
+    },
+    "WhyTradeSharing": {
+      "title": "Why TradeSharing?",
+      "subTitle": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?",
+      "uncover": {
+        "title": "Uncover your position",
+        "subTitle": "Avoid exchange to know your liquidation price"
+      },
+      "bypass": {
+        "title": "Bypass trading limits",
+        "subTitle": "Avoid exchange restrictions to trade. Like caps on futures trading, and many others"
+      },
+      "decentralize": {
+        "title": "Decentralize your orders",
+        "subTitle": "Avoid exchange to track your history and predict your movements"
+      },
+      "lead": {
+        "title": "Lead new movement",
+        "subTitle": "Auto trade with unlimited accounts in real-time and lead market movements like never seen before"
+      }
+    },
+    "FAQ": {
+      "title": "FAQ",
+      "questions": {
+        "1": {
+          "question": "What is this emerging... um... art form?",
+          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        },
+        "2": {
+          "question": "Ok, so The Foxy Gang are individual, unique NFTs?",
+          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        },
+        "3": {
+          "question": "Where can I buy or sell my Gang, even if that... umm... sounds inappropriate?",
+          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        },
+        "4": {
+          "question": "Oh! That's cool. So what is the mint price?",
+          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        },
+        "5": {
+          "question": "And what is the total supply of Foxies?",
+          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        }
+      }
+    },
+    "Footer": {
+      "rightsTitle": "Copyright © 2022. All rights reserved."
+    }
+  }
+}

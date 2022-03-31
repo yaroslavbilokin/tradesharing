@@ -20,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "npm run prettier && npm run eslint && react-scripts build",
     "test": "react-scripts test",
@@ -27,9 +29,7 @@
     "prettier": "prettier --check . --ignore-path ./.prettierignore",
     "eslint": "eslint \"**/*.{js,jsx}\" --ignore-path ./.eslintignore",
     "prettier-fix": "prettier . --write --ignore-path ./.prettierignore",
-    "eslint-fix": "eslint \"**/*.{js,jsx}\" --fix --ignore-path ./.eslintignore",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eslint-fix": "eslint \"**/*.{js,jsx}\" --fix --ignore-path ./.eslintignore"
   },
   "eslintConfig": {
     "extends": [

@@ -11,49 +11,61 @@ const Table = () => {
         <th className="row-cell name-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.user')}
+              {t('Marketplace.table.header.user.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.user.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell name-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.exchange')}
+              {t('Marketplace.table.header.exchange.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.exchange.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.crypto')}
+              {t('Marketplace.table.header.crypto.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.crypto.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.limits')}
+              {t('Marketplace.table.header.limits.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.limits.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.escrow')}
+              {t('Marketplace.table.header.escrow.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.escrow.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell">
           <div className="row-cell__content">
             <span className="cell-title">
-              {t('Marketplace.table.header.rentRate')}
+              {t('Marketplace.table.header.rentRate.title')}
             </span>
-            <CustomTooltip text="Test 23 123 312" />
+            <CustomTooltip
+              text={t('Marketplace.table.header.rentRate.tooltipTitle')}
+            />
           </div>
         </th>
         <th className="row-cell" />

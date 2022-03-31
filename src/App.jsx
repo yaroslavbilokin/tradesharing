@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import './App.scss';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { getFromLocalStorage, setToLocalStorage } from './global/helpers';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -12,7 +12,12 @@ import Marketplace from './components/Marketplace';
 import FAQ from './components/FAQ';
 
 const App = () => {
+  const [selectedLang, setSelectedLang] = useState(
+    getFromLocalStorage('lang') || 'en'
+  );
+
   const en = require('./global/translations/en.json');
+  const ch = require('./global/translations/ch.json');
 
   const howItWorksSectionRef = useRef();
   const marketplaceSectionRef = useRef();
@@ -22,8 +27,9 @@ const App = () => {
   i18n.use(initReactI18next).init({
     resources: {
       en,
+      ch,
     },
-    lng: getFromLocalStorage('lang'),
+    lng: selectedLang,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
@@ -61,8 +67,14 @@ const App = () => {
   useEffect(() => {
     if (!getFromLocalStorage('lang')) {
       setToLocalStorage('lang', 'en');
+      setSelectedLang('en');
     }
   }, []);
+
+  const handleLanguageChange = (lang) => {
+    setSelectedLang(lang);
+    setToLocalStorage('lang', lang);
+  };
 
   return (
     <div className="app-container">
@@ -71,6 +83,8 @@ const App = () => {
         onMarketplaceClick={handleScrollToMarketplace}
         onWhyTradeSharingClick={handleScrollToWhyTradeSharing}
         onFAQClick={handleScrollToFAQ}
+        language={selectedLang}
+        onLanguageChange={handleLanguageChange}
       />
       <div className="app-content">
         <Banner />

@@ -7,6 +7,10 @@
         "marketPlace": "Marketplace",
         "whyTradeSharing": "Why TradeSharing",
         "FAQ": "FAQ"
+      },
+      "languagesSwitcher": {
+        "en": "English",
+        "ch": "Chinese"
       }
     },
     "Banner": {
@@ -42,12 +46,30 @@
       "title": "Marketplace",
       "table": {
         "header": {
-          "user": "User",
-          "exchange": "Exchange",
-          "crypto": "Crypto",
-          "limits": "Limits",
-          "escrow": "Escrow",
-          "rentRate": "Hourly rent rate"
+          "user": {
+            "title": "User",
+            "tooltipTitle": "User"
+          },
+          "exchange": {
+            "title": "Exchange",
+            "tooltipTitle": "Exchange"
+          },
+          "crypto": {
+            "title": "Crypto",
+            "tooltipTitle": "Crypto"
+          },
+          "limits": {
+            "title": "Limits",
+            "tooltipTitle": "Limits"
+          },
+          "escrow": {
+            "title": "Escrow",
+            "tooltipTitle": "Escrow"
+          },
+          "rentRate": {
+            "title": "Hourly rent rate",
+            "tooltipTitle": "Hourly rent rate"
+          }
         },
         "rentAccountBtnTitle": "Rent the account"
       }

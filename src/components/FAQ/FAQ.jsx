@@ -36,8 +36,6 @@ const FAQ = () => {
 
   const [accordionState, setAccordionState] = useAccordion(questions);
 
-  console.log(accordionState);
-
   const handleChangeAccordion = (id) => setAccordionState(id);
 
   return (

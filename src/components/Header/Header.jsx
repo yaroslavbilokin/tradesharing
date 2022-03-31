@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import './Header.scss';
 import headerLogo from '../../global/media/header-logo.svg';
+import LanguageSwitcher from '../LanguageSwitcher';
+import './Header.scss';
 
 const Header = ({
   onHowItWorksClick,
   onMarketplaceClick,
   onWhyTradeSharingClick,
   onFAQClick,
+  onLanguageChange,
+  language,
 }) => {
   const { t } = useTranslation();
 
@@ -50,7 +53,11 @@ const Header = ({
           </div>
         ))}
       </div>
-      <div className="waitlist-btn__container">
+      <div className="controls-container">
+        <LanguageSwitcher
+          language={language}
+          onLanguageChange={onLanguageChange}
+        />
         <div className="waitlist-btn">{t('Header.joinWaitlist')}</div>
       </div>
     </div>
@@ -62,6 +69,8 @@ Header.propTypes = {
   onMarketplaceClick: PropTypes.func.isRequired,
   onWhyTradeSharingClick: PropTypes.func.isRequired,
   onFAQClick: PropTypes.func.isRequired,
+  onLanguageChange: PropTypes.func.isRequired,
+  language: PropTypes.string.isRequired,
 };
 
 export default Header;
