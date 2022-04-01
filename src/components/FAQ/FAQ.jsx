@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import './FAQ.scss';
-import useAccordion from '../../global/hocs/useAccordion';
+import useAccordion from '../../global/hooks/useAccordion';
 import Accordion from './components/Accordion';
 
 const FAQ = () => {

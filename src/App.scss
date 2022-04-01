@@ -8,4 +8,8 @@
 .app-content {
   padding-top: 100px;
   color: white;
+
+  @media only screen and (max-width: 1000px) {
+    padding-top: 0;
+  }
 }

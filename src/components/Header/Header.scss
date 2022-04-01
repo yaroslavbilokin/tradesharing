@@ -11,10 +11,40 @@
   z-index: 200;
   background-color: $black;
 
-  .header-logo__container {
+  .nav-container {
     display: flex;
     align-items: center;
-    padding: 24px 0 24px 100px;
+
+    .header-logo__container {
+      display: flex;
+      align-items: center;
+      padding: 24px 85px 24px 100px;
+    }
+
+    .navigation-items__container {
+      display: flex;
+      justify-content: space-between;
+      width: max-content;
+      opacity: 0;
+      transition: all 0.5s;
+
+      &.scrolled {
+        opacity: 1;
+      }
+
+      .navigation-item {
+        font-size: 16px;
+        font-weight: 700;
+        color: $white;
+        cursor: pointer;
+        margin-right: 40px;
+        transition: color 0.2s ease-out;
+
+        &:hover {
+          color: $dark-grey;
+        }
+      }
+    }
   }
 
   .controls-container {
@@ -22,6 +52,10 @@
     justify-content: space-between;
     width: 20%;
     padding: 0 100px 0 0;
+
+    @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+      min-width: 270px;
+    }
 
     .waitlist-btn {
       display: flex;
@@ -34,7 +68,7 @@
       color: $black;
       border-radius: 6px;
       font-size: 14px;
-      font-weight: 900;
+      font-weight: 700;
       cursor: pointer;
       z-index: 1;
 
@@ -58,21 +92,72 @@
       }
     }
   }
+}
 
-  .navigation-items__container {
+.mobile-header__container {
+  padding: 22px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s;
+
+  .logo-container {
+    z-index: 200;
+  }
+
+  .burger-control__container {
+    cursor: pointer;
+    height: 24px;
+    z-index: 200;
+  }
+
+  .menu-body__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 485px;
+    transition: all 0.2s;
 
-    .navigation-item {
-      font-size: 16px;
-      font-weight: 700;
-      color: $white;
-      cursor: pointer;
-      transition: color 0.2s ease-out;
+    &.active {
+      background-color: $black;
+      opacity: 1;
+      z-index: 200;
+    }
 
-      &:hover {
-        color: $dark-grey;
+    .menu-header {
+      padding: 22px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo-container {
+      }
+
+      .menu-close__container {
+        cursor: pointer;
+        height: 24px;
+      }
+    }
+
+    .menu-nav__container {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mobile-navigation-item {
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        cursor: pointer;
       }
     }
   }

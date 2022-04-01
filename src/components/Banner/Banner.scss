@@ -3,20 +3,66 @@
 .banner-container {
   padding: 120px 100px 60px 100px;
 
+  @media only screen and (max-width: 700px) {
+    padding: 50px 18px 30px 18px;
+  }
+
+  @media only screen and (min-width: 700px) and (max-width: 1000px) {
+    padding: 60px 40px;
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    padding: 60px;
+  }
+
   .banner-content {
     display: flex;
     margin-bottom: 140px;
 
+    @media only screen and (max-width: 1300px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 800px) {
+      margin-bottom: 60px;
+    }
+
     .left-block {
       width: 50%;
+
+      @media only screen and (max-width: 1300px) {
+        width: 100%;
+      }
 
       .title-container {
         max-width: 550px;
         margin-bottom: 60px;
 
+        @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+          max-width: 650px;
+        }
+
+        @media only screen and (min-width: 650px) and (max-width: 1000px) {
+          margin-bottom: 40px;
+        }
+
+        @media only screen and (max-width: 650px) {
+          margin-bottom: 32px;
+          max-width: 340px;
+        }
+
         .title-content {
           font-size: 60px;
           font-weight: 900;
+
+          @media only screen and (max-width: 650px) {
+            font-size: 32px;
+          }
+
+          @media only screen and (min-width: 650px) and (max-width: 1000px) {
+            font-size: 50px;
+          }
 
           .highlighted {
             color: $orange;
@@ -46,7 +92,7 @@
           cursor: pointer;
           position: relative;
           font-size: 16px;
-          font-weight: 900;
+          font-weight: 700;
           color: $black;
           background: $green;
           width: max-content;
@@ -76,9 +122,23 @@
     .right-block {
       width: 50%;
 
+      @media only screen and (max-width: 1300px) {
+        margin-bottom: 40px;
+      }
+
+      @media only screen and (min-width: 1100px) and (max-width: 1300px) {
+        width: 90%;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        width: 100%;
+      }
+
       .banner-gif__container {
+        width: 100%;
+
         img {
-          width: 670px;
+          width: 100%;
         }
       }
     }
@@ -91,26 +151,77 @@
     padding: 60px 100px;
     display: flex;
 
+    @media only screen and (min-width: 1200px) and (max-width: 1350px) {
+      padding: 60px;
+    }
+
+    @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+      padding: 60px 30px;
+    }
+
+    @media only screen and (min-width: 800px) and (max-width: 1000px) {
+      padding: 30px 10px;
+      justify-content: space-around;
+    }
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 0;
+    }
+
     .statistic-block {
       width: 50%;
       display: flex;
       justify-content: center;
 
+      @media only screen and (min-width: 800px) and (max-width: 1000px) {
+        width: max-content;
+      }
+
+      @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+
       .statistic-block__icon {
         margin-right: 32px;
+
+        @media only screen and (max-width: 800px) {
+          margin: 0 0 24px 0;
+        }
       }
 
       .statistic-block__content {
+        @media only screen and (max-width: 800px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
         .value {
           font-size: 38px;
           font-weight: 700;
           margin-bottom: 12px;
+
+          @media only screen and (max-width: 1200px) {
+            font-size: 28px;
+          }
         }
 
         .text {
           font-size: 18px;
           color: $dark-grey;
           font-weight: 600;
+
+          @media only screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
         }
       }
     }

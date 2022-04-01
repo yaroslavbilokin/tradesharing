@@ -4,7 +4,9 @@ import { ReactComponent as TwitterIcon } from '../../global/media/twitter-icon.s
 import { ReactComponent as DiscordIcon } from '../../global/media/discord-icon.svg';
 import { ReactComponent as RedditIcon } from '../../global/media/reddit-icon.svg';
 import logo from '../../global/media/footer-logo.svg';
+import mobileLogo from '../../global/media/footer-mobile-logo.svg';
 import './Footer.scss';
+import useDesktopSize from '../../global/hooks/useDesktopSize';
 
 const Footer = ({
   onHowItWorksClick,
@@ -13,6 +15,7 @@ const Footer = ({
   onFAQClick,
 }) => {
   const { t } = useTranslation();
+  const isDesktop = useDesktopSize();
 
   const socialLinks = [
     {
@@ -36,7 +39,7 @@ const Footer = ({
     <div className="footer-container">
       <div className="footer-content">
         <div className="footer-logo__container">
-          <img src={logo} alt="footer-logo" />
+          <img src={isDesktop ? logo : mobileLogo} alt="footer-logo" />
         </div>
         <div className="footer-navigation__container">
           <div className="navigation-block">

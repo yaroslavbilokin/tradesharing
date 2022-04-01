@@ -80,8 +80,6 @@ const App = () => {
     <div className="app-container">
       <Header
         onHowItWorksClick={handleScrollToHowItWorks}
-        onMarketplaceClick={handleScrollToMarketplace}
-        onWhyTradeSharingClick={handleScrollToWhyTradeSharing}
         onFAQClick={handleScrollToFAQ}
         language={selectedLang}
         onLanguageChange={handleLanguageChange}

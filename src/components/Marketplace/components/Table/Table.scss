@@ -4,9 +4,11 @@
   border-radius: 24px;
   background-color: $grey;
   border: 1px solid $stroke;
+  overflow: auto;
+  width: 100%;
 
   .table {
-    width: 100%;
+    min-width: 1240px;
     border-collapse: collapse;
 
     .table-header {
@@ -81,7 +83,7 @@
           position: relative;
           padding: 10px 16px;
           font-size: 14px;
-          font-weight: 900;
+          font-weight: 700;
           color: $black;
           background: $green;
           border-radius: 6px;

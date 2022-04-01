@@ -3,6 +3,10 @@
 .how-it-works__container {
   padding: 100px 100px 60px;
 
+  @media only screen and (max-width: 1000px) {
+    padding: 30px 0 30px 0;
+  }
+
   .title {
     text-align: center;
     font-size: 60px;
@@ -17,21 +21,33 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 80px;
+
+    @media only screen and (max-width: 650px) {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   .how-it-works__content {
     position: relative;
-    z-index: 100;
 
-    .content-background__container {
+    .desktop-content-background__container {
       width: 100%;
       position: absolute;
+
+      @media only screen and (max-width: 1250px) {
+        display: none;
+      }
 
       .background {
         display: flex;
         justify-content: space-between;
         padding: 0 250px;
         height: 132px;
+
+        @media only screen and (min-width: 1250px) and (max-width: 1350px) {
+          padding: 0 220px;
+        }
 
         .vector-container {
           &.top {
@@ -48,11 +64,26 @@
     .content {
       display: flex;
       justify-content: space-between;
+      z-index: 100;
+
+      @media only screen and (max-width: 1250px) {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .step-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        @media only screen and (max-width: 1250px) {
+          margin-bottom: 88px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
 
         .icon-container {
           width: 130px;
@@ -64,6 +95,10 @@
           justify-content: center;
           align-items: center;
           background-color: $grey;
+
+          @media only screen and (max-width: 1250px) {
+            margin-bottom: 24px;
+          }
         }
 
         .step-title {
@@ -71,6 +106,10 @@
           font-weight: 700;
           color: $white;
           margin-bottom: 16px;
+
+          @media only screen and (max-width: 650px) {
+            font-size: 20px;
+          }
         }
 
         .step-subtitle {
@@ -79,6 +118,19 @@
           color: $dark-grey;
           font-size: 18px;
           font-weight: 500;
+
+          @media only screen and (max-width: 650px) {
+            font-size: 16px;
+          }
+        }
+
+        .mobile-vector__container {
+          position: absolute;
+          top: -65px;
+
+          @media only screen and (min-width: 1250px) {
+            display: none;
+          }
         }
       }
     }

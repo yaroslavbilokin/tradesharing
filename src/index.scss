@@ -9,3 +9,17 @@ body {
   background-color: $black;
   cursor: default;
 }
+
+//.no-scroll {
+//  overflow-y: hidden !important;
+//  height: 100vh;
+//  max-height: 100vh;
+//
+//  & > div {
+//    position: fixed;
+//    top: 0;
+//    height: 100%;
+//    min-height: 100%;
+//    width: 100%;
+//  }
+//}

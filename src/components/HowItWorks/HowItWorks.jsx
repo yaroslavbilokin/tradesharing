@@ -6,10 +6,15 @@ import firstStep from '../../global/media/first-step-icon.svg';
 import secondStep from '../../global/media/second-step-icon.svg';
 import thirdStep from '../../global/media/third-step-icon.svg';
 import fourthStep from '../../global/media/fourth-step-icon.svg';
+import firstMobileVector from '../../global/media/first-mobile-vector.svg';
+import secondMobileVector from '../../global/media/second-mobile-vector.svg';
+import thirdMobileVector from '../../global/media/third-mobile-vector.svg';
+import useDesktopSize from '../../global/hooks/useDesktopSize';
 import './HowItWorks.scss';
 
 const HowItWorks = () => {
   const { t } = useTranslation();
+  const isDesktop = useDesktopSize();
 
   const howItWorksSteps = [
     {
@@ -38,26 +43,48 @@ const HowItWorks = () => {
     },
   ];
 
+  const mobileVectorsStrategy = {
+    0: null,
+    1: (
+      <div className="mobile-vector__container">
+        <img src={firstMobileVector} alt="vector" />
+      </div>
+    ),
+    2: (
+      <div className="mobile-vector__container">
+        <img src={secondMobileVector} alt="vector" />
+      </div>
+    ),
+    3: (
+      <div className="mobile-vector__container">
+        <img src={thirdMobileVector} alt="vector" />
+      </div>
+    ),
+  };
+
   return (
     <div className="how-it-works__container">
       <div className="title">{t('HowItWorks.title')}</div>
       <div className="how-it-works__content">
-        <div className="content-background__container">
-          <div className="background">
-            <div className="vector-container top">
-              <img src={firstVector} alt="vector" />
-            </div>
-            <div className="vector-container bottom">
-              <img src={secondVector} alt="vector" />
-            </div>
-            <div className="vector-container top">
-              <img src={thirdVector} alt="vector" />
+        {isDesktop && (
+          <div className="desktop-content-background__container">
+            <div className="background">
+              <div className="vector-container top">
+                <img src={firstVector} alt="vector" />
+              </div>
+              <div className="vector-container bottom">
+                <img src={secondVector} alt="vector" />
+              </div>
+              <div className="vector-container top">
+                <img src={thirdVector} alt="vector" />
+              </div>
             </div>
           </div>
-        </div>
+        )}
         <div className="content">
-          {howItWorksSteps.map((step) => (
+          {howItWorksSteps.map((step, index) => (
             <div key={step.id} className="step-container">
+              {mobileVectorsStrategy[index]}
               <div className="icon-container">
                 <img src={step.icon} alt="step icon" />
               </div>

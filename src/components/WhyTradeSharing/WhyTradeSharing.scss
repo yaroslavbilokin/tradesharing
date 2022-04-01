@@ -3,6 +3,10 @@
 .why-trade-sharing__container {
   padding: 100px 0 36px;
 
+  @media only screen and (max-width: 650px) {
+    padding: 30px 18px;
+  }
+
   .why-trade-sharing__title {
     text-align: center;
     font-size: 60px;
@@ -17,6 +21,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 650px) {
+      font-size: 32px;
+      text-align: start;
+    }
   }
 
   .why-trade-sharing__subtitle {
@@ -26,12 +35,24 @@
     font-size: 24px;
     font-weight: 500;
     margin: auto auto 80px;
+
+    @media only screen and (max-width: 650px) {
+      text-align: start;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
   }
 
   .why-trade-sharing__reasons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 1300px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
 
     .reason-container {
       width: 526px;
@@ -43,12 +64,32 @@
       display: flex;
       align-items: center;
 
+      @media only screen and (max-width: 650px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        margin-bottom: 20px;
+        width: calc(100% - 48px);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
       &:nth-child(odd) {
         margin-right: 12px;
+
+        @media only screen and (max-width: 1300px) {
+          margin-right: 0;
+        }
       }
 
       &:nth-child(even) {
         margin-left: 12px;
+
+        @media only screen and (max-width: 1300px) {
+          margin-left: 0;
+        }
       }
 
       .reason-icon__container {
@@ -60,6 +101,17 @@
         justify-content: center;
         align-items: center;
         margin-right: 54px;
+
+        @media only screen and (max-width: 650px) {
+          margin-bottom: 20px;
+          width: 86px;
+          height: 86px;
+
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
       }
 
       .reason-content {
@@ -69,12 +121,20 @@
           font-size: 24px;
           font-weight: 700;
           margin-bottom: 16px;
+
+          @media only screen and (max-width: 650px) {
+            font-size: 18px;
+          }
         }
 
         .subtitle {
           font-size: 18px;
           font-weight: 500;
           color: $dark-grey;
+
+          @media only screen and (max-width: 650px) {
+            font-size: 16px;
+          }
         }
       }
     }

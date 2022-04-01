@@ -4,6 +4,18 @@
   padding: 100px 100px 160px;
   display: flex;
 
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 700px) and (max-width: 1200px) {
+    padding: 60px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 30px 18px;
+  }
+
   .title {
     width: 45%;
     font-size: 60px;
@@ -17,12 +29,37 @@
       #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+      width: 20%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    @media only screen and (max-width: 650px) {
+      font-size: 32px;
+    }
   }
 
   .faq-content {
     width: 55%;
     flex: 0 1 55%;
     max-width: 55%;
+
+    @media only screen and (min-width: 1200px) and (max-width: 1200px) {
+      width: 80%;
+      flex: 0 1 80%;
+      max-width: 80%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
 
     .accordion-wrapper {
       margin-bottom: 16px;
