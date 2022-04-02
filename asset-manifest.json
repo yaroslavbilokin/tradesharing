@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ae73a73.css",
-    "main.js": "/static/js/main.15a5ca11.js",
+    "main.css": "/static/css/main.6504ebbb.css",
+    "main.js": "/static/js/main.585a9e92.js",
     "static/media/banner.gif": "/static/media/banner.9237b4ce816342827e3d.gif",
     "static/media/footer-logo.svg": "/static/media/footer-logo.80e1c56007a3310738f9f14d43bde535.svg",
     "static/media/header-logo.svg": "/static/media/header-logo.e380ffbde8615df2ca09ca982db05ff4.svg",
+    "static/media/footer-mobile-logo.svg": "/static/media/footer-mobile-logo.807d287bc35ea8296a4b0564a7059bbc.svg",
+    "static/media/header-mobile-icon.svg": "/static/media/header-mobile-icon.4ac6cf6ea6db0147387af90b0a47ca28.svg",
     "static/media/lead-reason-icon.svg": "/static/media/lead-reason-icon.19995661aa5da81c3af5794c9386d5c9.svg",
     "static/media/reddit-icon.svg": "/static/media/reddit-icon.37db4b08a161bbe3f8a7a5304432b18c.svg",
     "static/media/third-step-icon.svg": "/static/media/third-step-icon.d4fd54bb616b28978183e11165412b9a.svg",
@@ -19,18 +21,23 @@
     "static/media/first-vector.svg": "/static/media/first-vector.e813bb42b484a873c14130c0bb835e86.svg",
     "static/media/third-vector.svg": "/static/media/third-vector.e813bb42b484a873c14130c0bb835e86.svg",
     "static/media/twitter-icon.svg": "/static/media/twitter-icon.a80ad657457e2167db10cea150bc7166.svg",
+    "static/media/second-mobile-vector.svg": "/static/media/second-mobile-vector.2f8025d456409dcf3fe37591c3fc9e39.svg",
+    "static/media/first-mobile-vector.svg": "/static/media/first-mobile-vector.76a473f4d3f1baa1bbce6c9378f4e5fc.svg",
+    "static/media/third-mobile-vector.svg": "/static/media/third-mobile-vector.76a473f4d3f1baa1bbce6c9378f4e5fc.svg",
     "static/media/second-step-icon.svg": "/static/media/second-step-icon.54fae211a84e14ed4b0f0ffe01368d89.svg",
     "index.html": "/index.html",
     "static/media/bypass-reason-icon.svg": "/static/media/bypass-reason-icon.53daad8f8bdc401ac9d8d1b213e351ed.svg",
     "static/media/tooltip-icon.svg": "/static/media/tooltip-icon.313d81561e8176cbc067e145670373b8.svg",
+    "static/media/close-menu-icon.svg": "/static/media/close-menu-icon.48e86d57a0a90a8ba3f96f27d899d042.svg",
+    "static/media/burger-logo.svg": "/static/media/burger-logo.6e701291d8a19e5052c97a587876e0bb.svg",
     "static/media/lang-switch-icon.svg": "/static/media/lang-switch-icon.0832aecbf5789bb5e3d5fcd71422bc72.svg",
     "static/media/selected-lang-icon.svg": "/static/media/selected-lang-icon.02a17b0935e78b9673fc441e8c555c83.svg",
     "static/media/not-selected-lang-icon.svg": "/static/media/not-selected-lang-icon.e9342482c970ca18fc576d5067d77664.svg",
-    "main.8ae73a73.css.map": "/static/css/main.8ae73a73.css.map",
-    "main.15a5ca11.js.map": "/static/js/main.15a5ca11.js.map"
+    "main.6504ebbb.css.map": "/static/css/main.6504ebbb.css.map",
+    "main.585a9e92.js.map": "/static/js/main.585a9e92.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ae73a73.css",
-    "static/js/main.15a5ca11.js"
+    "static/css/main.6504ebbb.css",
+    "static/js/main.585a9e92.js"
   ]
 }
