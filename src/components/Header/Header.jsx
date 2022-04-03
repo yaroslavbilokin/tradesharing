@@ -7,8 +7,8 @@ import burgerIcon from '../../global/media/burger-logo.svg';
 import closeIcon from '../../global/media/close-menu-icon.svg';
 import LanguageSwitcher from '../LanguageSwitcher';
 import useDesktopSize from '../../global/hooks/useDesktopSize';
-import './Header.scss';
 import MobileLanguageSwitcher from '../MobileLanguageSwitcher/MobileLanguageSwitcher';
+import './Header.scss';
 
 const Header = ({
   onHowItWorksClick,
@@ -119,6 +119,7 @@ const Header = ({
                 key={item.id}
                 onClick={() => {
                   setIsMenuOpened(false);
+                  document.body.classList.remove('no-scroll');
                   item.handleClick();
                 }}
                 className="mobile-navigation-item"
