@@ -6,9 +6,9 @@ const Accordion = ({ question, answer, id, onClick, isCollapsed }) => {
 
   return (
     <div className="accordion-wrapper">
-      <div className="accordion-header">
+      <div className="accordion-header" onClick={handleCollapse}>
         <div className="header-content">{question}</div>
-        <div className="header-control__container" onClick={handleCollapse}>
+        <div className="header-control__container">
           <div className={`toggle ${isCollapsed ? 'collapsed' : ''}`} />
         </div>
       </div>

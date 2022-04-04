@@ -32,6 +32,21 @@ const FAQ = () => {
       question: t('FAQ.questions.5.question'),
       answer: t('FAQ.questions.5.answer'),
     },
+    {
+      id: 6,
+      question: t('FAQ.questions.6.question'),
+      answer: t('FAQ.questions.6.answer'),
+    },
+    {
+      id: 7,
+      question: t('FAQ.questions.7.question'),
+      answer: t('FAQ.questions.7.answer'),
+    },
+    {
+      id: 8,
+      question: t('FAQ.questions.8.question'),
+      answer: t('FAQ.questions.8.answer'),
+    },
   ];
 
   const [accordionState, setAccordionState] = useAccordion(questions);

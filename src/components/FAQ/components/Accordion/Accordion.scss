@@ -8,6 +8,7 @@
   .accordion-header {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 
     @media only screen and (max-width: 650px) {
       align-items: center;

@@ -14,7 +14,7 @@
       }
     },
     "Banner": {
-      "title": "It is /Chinese/ translation",
+      "title": "Rent unlimited /Binance accounts/ & empower your trades",
       "joinWaitlistBtnTitle": "Join the waitlist",
       "statistic": {
         "binanceAccountsTitle": "Binance accounts",
@@ -26,19 +26,19 @@
       "steps": {
         "1": {
           "title": "1. Find owners",
-          "subTitle": "Filter the marketplace to find the accounts that fit your needs"
+          "subTitle": "Filter the marketplace to find the accounts that fit your needs."
         },
         "2": {
           "title": "2. Fund the escrow",
-          "subTitle": "Send collateral funds to create a reserve in case your trade close in negative"
+          "subTitle": "Send collateral funds to create a reserve in case your trade closes in negative."
         },
         "3": {
-          "title": "3. Trade in real-time",
-          "subTitle": "Control rental accounts from one single connection. Via API or web."
+          "title": "3. Trade-in real-time",
+          "subTitle": "Control accounts that you rent from one single connection. Via API or web."
         },
         "4": {
           "title": "4. Collect Profit",
-          "subTitle": "Your trade closed with profit? collect profit from the escrow and withdraw the reserve"
+          "subTitle": "Congrats - your trade closed with profit! Collect it from the escrow and recover the collateral."
         }
       }
     },
@@ -47,28 +47,28 @@
       "table": {
         "header": {
           "user": {
-            "title": "User",
-            "tooltipTitle": "User"
+            "title": "Owner",
+            "tooltipTitle": "User that owns and rents their Binance account for a fee."
           },
           "exchange": {
             "title": "Exchange",
-            "tooltipTitle": "Exchange"
+            "tooltipTitle": "Exchange where the rented trading account is located."
           },
           "crypto": {
             "title": "Crypto",
-            "tooltipTitle": "Crypto"
+            "tooltipTitle": "The cryptocurrency available in the trading account for rent. You’re free to exchange it for any other pair available on the exchange. However, when you return the account, it must be in this cryptocurrency."
           },
           "limits": {
             "title": "Limits",
-            "tooltipTitle": "Limits"
+            "tooltipTitle": "The amount range available in the trading account that you will have access to trade once rented."
           },
           "escrow": {
             "title": "Escrow",
-            "tooltipTitle": "Escrow"
+            "tooltipTitle": "The collateral funds from each party to mitigate counterparty risks. Profit and losses are taken from the escrow."
           },
           "rentRate": {
             "title": "Hourly rent rate",
-            "tooltipTitle": "Hourly rent rate"
+            "tooltipTitle": "The cost to rent this account per hour with unlimited trades."
           }
         },
         "rentAccountBtnTitle": "Rent the account"
@@ -76,46 +76,58 @@
     },
     "WhyTradeSharing": {
       "title": "Why TradeSharing?",
-      "subTitle": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?",
+      "subTitle": "Major exchanges create bots to track your positions, anticipate your movements and bet against you. How can you beat the big whales? Leverage TradeSharing’s marketplace today:",
       "uncover": {
         "title": "Uncover your position",
-        "subTitle": "Avoid exchange to know your liquidation price"
+        "subTitle": "Prevent crypto exchanges from seeing your positions and liquidation prices."
       },
       "bypass": {
         "title": "Bypass trading limits",
-        "subTitle": "Avoid exchange restrictions to trade. Like caps on futures trading, and many others"
+        "subTitle": "Avoid traditional trading restrictions, such as caps on future trading, geo-restrictions, and more."
       },
       "decentralize": {
         "title": "Decentralize your orders",
-        "subTitle": "Avoid exchange to track your history and predict your movements"
+        "subTitle": "Stop crypto exchanges from tracking your trading history and strategies."
       },
       "lead": {
         "title": "Lead new movement",
-        "subTitle": "Auto trade with unlimited accounts in real-time and lead market movements like never seen before"
+        "subTitle": "Auto-trade with unlimited accounts in real-time and enjoy unparalleled market movements."
       }
     },
     "FAQ": {
       "title": "FAQ",
       "questions": {
         "1": {
-          "question": "What is this emerging... um... art form?",
-          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+          "question": "I joined your waitlist, when can I get access?",
+          "answer": "We’re excited to have you. Please be patient as we onboard users at the pace of TradeSharing’s purchasing power growth. As more account owners join the platform, more renters will be invited to join."
         },
         "2": {
-          "question": "Ok, so The Foxy Gang are individual, unique NFTs?",
-          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+          "question": "Can Chinese users use TradeSharing?",
+          "answer": "Yes, we welcome Chinese users to TradeSharing."
         },
         "3": {
-          "question": "Where can I buy or sell my Gang, even if that... umm... sounds inappropriate?",
-          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+          "question": "Can I rent and trade with multiple Binance accounts at the same time?",
+          "answer": "Yes, as long you fund the escrow with enough collateral funds, you can virtually trade with an unlimited number of Binance accounts. You can operate all your rented accounts automatically by API or manually on the TradeSharing dashboard."
         },
         "4": {
-          "question": "Oh! That's cool. So what is the mint price?",
-          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+          "question": "How does TradeSharing protect my money?",
+          "answer": "To ensure your profits, each user who wants to rent an account on TradeSharing is required to first deposit collateral funds into an escrow. If your strategy generates profit, TradeSharing will be able to pay out your profits by taking funds from the escrow and eliminating counterparty risk."
         },
         "5": {
-          "question": "And what is the total supply of Foxies?",
-          "answer": "Portfolio liquidation is common today. Major exchanges create bots to track your positions, anticipate your movement and bet against you. How can you beat the big whales?\n\nAuto trade with unlimited accounts in real-time and lead market movements like never seen before"
+          "question": "Why do I need to deposit collateral to rent a Binance account?",
+          "answer": "Once you rent a Binance account, you’re paying for the right to use the funds available on a trading account. However, you’re still responsible for the losses on this account. So, to protect the Binance accounts owners' funds, you’re required to fund an escrow with up to 100% of the rented account balance. If you return an account with losses, TradeSharing will be able to cover the negative balance by taking funds from the escrow."
+        },
+        "6": {
+          "question": "How much money can I trade?",
+          "answer": "You can trade up to the available limits applicable on any given rented account."
+        },
+        "7": {
+          "question": "How can I access rented Binance accounts?",
+          "answer": "You will be able to control rented accounts by API or through the TradeSharing dashboard. You’ll receive permission to trade any pair available on a Binance rented account."
+        },
+        "8": {
+          "question": "How can I rent my Binance account on TradeSharing?",
+          "answer": "Please join our waitlist. Public access will be available soon."
         }
       }
     },
