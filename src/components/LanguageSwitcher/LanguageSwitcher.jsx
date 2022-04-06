@@ -15,7 +15,8 @@ const LanguageSwitcher = ({ onLanguageChange, language }) => {
 
   const languagesStrategy = {
     en: t('Header.languagesSwitcher.en'),
-    ch: t('Header.languagesSwitcher.ch'),
+    tch: t('Header.languagesSwitcher.tch'),
+    sch: t('Header.languagesSwitcher.sch'),
   };
 
   const languages = [
@@ -26,8 +27,13 @@ const LanguageSwitcher = ({ onLanguageChange, language }) => {
     },
     {
       id: 2,
-      name: t('Header.languagesSwitcher.ch'),
-      key: 'ch',
+      name: t('Header.languagesSwitcher.sch'),
+      key: 'sch',
+    },
+    {
+      id: 3,
+      name: t('Header.languagesSwitcher.tch'),
+      key: 'tch',
     },
   ];
 

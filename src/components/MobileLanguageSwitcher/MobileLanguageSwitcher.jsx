@@ -8,7 +8,9 @@ const MobileLanguageSwitcher = ({ language, onLanguageChange }) => {
   return (
     <div className="mobile-language-switcher__container">
       <div
-        className={`language ${language === 'en' ? 'active' : ''}`}
+        className={`language ${language === 'en' ? 'active' : ''} ${
+          language === 'en' ? 'english' : ''
+        }`}
         onClick={() => {
           if (language !== 'en') {
             onLanguageChange('en');
@@ -19,14 +21,29 @@ const MobileLanguageSwitcher = ({ language, onLanguageChange }) => {
       </div>
       <div className="divider">|</div>
       <div
-        className={`language ${language === 'ch' ? 'active' : ''}`}
+        className={`language ${language === 'sch' ? 'active' : ''} ${
+          language === 'en' ? 'english' : ''
+        }`}
         onClick={() => {
-          if (language !== 'ch') {
-            onLanguageChange('ch');
+          if (language !== 'sch') {
+            onLanguageChange('sch');
           }
         }}
       >
-        {t('Header.languagesSwitcher.ch')}
+        {t('Header.languagesSwitcher.sch')}
+      </div>
+      <div className="divider">|</div>
+      <div
+        className={`language ${language === 'tch' ? 'active' : ''} ${
+          language === 'en' ? 'english' : ''
+        }`}
+        onClick={() => {
+          if (language !== 'tch') {
+            onLanguageChange('tch');
+          }
+        }}
+      >
+        {t('Header.languagesSwitcher.tch')}
       </div>
     </div>
   );

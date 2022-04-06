@@ -1,0 +1,139 @@
+{
+  "translation": {
+    "Header": {
+      "joinWaitlist": "加入后补名单",
+      "navigationItems": {
+        "howItWorks": "如何使用",
+        "marketPlace": "市场",
+        "whyTradeSharing": "为什么要用TradeSharing",
+        "FAQ": "常问问题"
+      },
+      "languagesSwitcher": {
+        "en": "英文",
+        "sch": "简体中文",
+        "tch": "繁體中文"
+      }
+    },
+    "Banner": {
+      "title": "租用无交易次数上限的 /币安账户/ 並把你的交易最大化",
+      "joinWaitlistBtnTitle": "加入后补名单",
+      "statistic": {
+        "binanceAccountsTitle": "币安账户",
+        "purchasingPowerTitle": "每月购买力"
+      }
+    },
+    "HowItWorks": {
+      "title": "如何使用",
+      "steps": {
+        "1": {
+          "title": "1. 找寻账户主人",
+          "subTitle": "通过筛选，在市场上找寻符合您需要的账户。"
+        },
+        "2": {
+          "title": "2. 缴交托管金",
+          "subTitle": "假如您的交易蒙受亏损，系统将會动用以保证金创建的预备金來弥补交易亏损。"
+        },
+        "3": {
+          "title": "3. 实时交易",
+          "subTitle": "通过一个连接点控制您租用的账户，连接点可以是应用程式介面或网站。"
+        },
+        "4": {
+          "title": "4. 领取交易利润",
+          "subTitle": "恭喜发财 - 您的交易赚了钱！ 您可以在托管金里领取您的交易利润，並收回已缴交的保证金。"
+        }
+      }
+    },
+    "Marketplace": {
+      "title": "市场",
+      "table": {
+        "header": {
+          "user": {
+            "title": "账户主人",
+            "tooltipTitle": "拥有並出租币安账户的用戶。"
+          },
+          "exchange": {
+            "title": "交易所",
+            "tooltipTitle": "租用交易账户位于的交易所。"
+          },
+          "crypto": {
+            "title": "加密货币",
+            "tooltipTitle": "所租交易账户内的可用加密货币。您可以自由地把加密货币换成交易所其他的可用货币。不过，当你归还账户时，账户的货币必须是原来的加密货币。"
+          },
+          "limits": {
+            "title": "上限",
+            "tooltipTitle": "您所租用的交易账户里可动用资金的限额。"
+          },
+          "escrow": {
+            "title": "托管金",
+            "tooltipTitle": "各方缴交的保证金可以减轻交易对手风险。账户利润和亏损都是记录在托管金里。"
+          },
+          "rentRate": {
+            "title": "时租收费",
+            "tooltipTitle": "这个无交易次数上限账户的每小时收费。"
+          }
+        },
+        "rentAccountBtnTitle": "租用账户"
+      }
+    },
+    "WhyTradeSharing": {
+      "title": "为什么要用TradeSharing?",
+      "subTitle": "主流交易所设立了机械人追踪您的头寸，通过预测您的操作来跟您进行交易。您怎样才能击败这些大鳄？立刻使用TradeSharing的交易平台：",
+      "uncover": {
+        "title": "隐藏您的头寸",
+        "subTitle": "防止加密货币交易所侦测到您的头寸和交易价格。"
+      },
+      "bypass": {
+        "title": "绕过交易限制",
+        "subTitle": "避开未来交易上限和地区限制等传统交易限制。"
+      },
+      "decentralize": {
+        "title": "订单去中央化",
+        "subTitle": "阻止加密货币交易所追踪您的交易历史和策略。"
+      },
+      "lead": {
+        "title": "引领新的交易模式",
+        "subTitle": "利用无限个账户进行自动实时交易，享受无与伦比的交易效率。"
+      }
+    },
+    "FAQ": {
+      "title": "常问问题",
+      "questions": {
+        "1": {
+          "question": "我加入候补名单后, 什么时候可以进行交易？",
+          "answer": "我们很高兴您加入了后补名单。 请耐心等候，我们现在正按TradeSharing购买力的增长速度接收用户。当更多出租交易账户的用户加入这个平台后，我们会邀请更多的账户租用者加入。"
+        },
+        "2": {
+          "question": "中国用户能使用TradeSharing吗？",
+          "answer": "没问题, 我们欢迎中国用户使用TradeSharing。"
+        },
+        "3": {
+          "question": "我可不可以同时间租用多个币安账户，并利用多个账户进行交易？",
+          "answer": "没问题，只要您的账户有足够的保证金, 便可以用无限个币安账户进行交易。 您可以通过应用程式介面自动操作或TradeSharing的Dashboard手动操作已租用的账户。"
+        },
+        "4": {
+          "question": "TradeSharing会怎样保障我的资金？",
+          "answer": "为确保阁下的交易利润，每个想在TradeSharing租用账户的用户都首先需要缴交保证金到托管金。如果您的交易策略能带来利润，TradeSharing将能够从托管金中提取资金支付您的利润，并消除交易对手风险。"
+        },
+        "5": {
+          "question": "为什么我要缴交保证金才能租用币安帐户？",
+          "answer": "当您租用币安账户后，您需要缴交保证金才能动用交易账户里的可用资金。不过，您仍需要为该账户的交易亏损负责。因此，为保障币安账户主人的资金安全，您需要提供最高达账户金额100%的托管金。当您归还的交易账户有亏损时, TradeSharing将能够从托管金中提取资金来弥补交易亏损。"
+        },
+        "6": {
+          "question": "我的交易上限是多少？",
+          "answer": "您可以在租用账户的特定交易限额内进行交易。"
+        },
+        "7": {
+          "question": "我可以怎样访问已经租用了的币安账户？",
+          "answer": "您可以通过应用程式介面或TradeSharing的Dashboard控制已租用的账户。您会获得权限在租用的币安账户上用任何货币进行交易。"
+        },
+        "8": {
+          "question": "我怎样才能在TradeSharing租用币安账户？",
+          "answer": "请加入我们的等候名单，币安账户很快便会开放使用。"
+        }
+      }
+    },
+    "Footer": {
+      "rightsTitle": "版权 © 2022。 版权所有。"
+    }
+  }
+}

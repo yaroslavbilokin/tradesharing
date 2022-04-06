@@ -1,0 +1,139 @@
+{
+  "translation": {
+    "Header": {
+      "joinWaitlist": "加入後補名單",
+      "navigationItems": {
+        "howItWorks": "如何使用",
+        "marketPlace": "市場",
+        "whyTradeSharing": "為甚麼要用TradeSharing",
+        "FAQ": "常問問題"
+      },
+      "languagesSwitcher": {
+        "en": "英文",
+        "sch": "简体中文",
+        "tch": "繁體中文"
+      }
+    },
+    "Banner": {
+      "title": "租用無交易次數上限的 /幣安賬戶/ 並把你的交易最大化",
+      "joinWaitlistBtnTitle": "加入候補名單",
+      "statistic": {
+        "binanceAccountsTitle": "幣安賬戶",
+        "purchasingPowerTitle": "每月購買力"
+      }
+    },
+    "HowItWorks": {
+      "title": "如何使用",
+      "steps": {
+        "1": {
+          "title": "1. 找尋賬戶主人",
+          "subTitle": "通過篩選在市場上找尋符合您需要的賬戶。"
+        },
+        "2": {
+          "title": "2. 繳交託管金",
+          "subTitle": "假如您的交易蒙受虧損，系統將會動用以保證金創建的預備金來彌補交易虧損。"
+        },
+        "3": {
+          "title": "3. 實時交易",
+          "subTitle": "通過一個連接點控制您租用的賬戶，連接點可以是應用程式介面或網站。"
+        },
+        "4": {
+          "title": "4. 領取交易利潤",
+          "subTitle": "恭喜發財 - 您的交易賺了錢！ 您可以在託管金裏領取您的交易利潤，並收回已繳交的保證金。"
+        }
+      }
+    },
+    "Marketplace": {
+      "title": "市場",
+      "table": {
+        "header": {
+          "user": {
+            "title": "賬戶主人",
+            "tooltipTitle": "擁有並出租幣安賬戶的用戶。"
+          },
+          "exchange": {
+            "title": "交易所",
+            "tooltipTitle": "租用交易賬戶位於的交易所。"
+          },
+          "crypto": {
+            "title": "加密貨幣",
+            "tooltipTitle": "所租交易賬戶內的可用加密貨幣。您可以自由地把加密貨幣換成交易所其他的可用貨幣。不過，當你歸還賬戶時，賬戶的貨幣必須是原來的加密貨幣。"
+          },
+          "limits": {
+            "title": "上限",
+            "tooltipTitle": "您所租用的交易賬戶裏可動用資金的限額。"
+          },
+          "escrow": {
+            "title": "託管金",
+            "tooltipTitle": "各方繳交的保證金可以減輕交易對手風險。賬戶利潤和虧損都是記錄在託管金裏。"
+          },
+          "rentRate": {
+            "title": "時租收費",
+            "tooltipTitle": "這個無交易次數上限賬戶的每小時收費。"
+          }
+        },
+        "rentAccountBtnTitle": "租用賬戶"
+      }
+    },
+    "WhyTradeSharing": {
+      "title": "為甚麼要用TradeSharing?",
+      "subTitle": "主流交易所設立了機械人追蹤您的頭寸，通過預測您的操作來跟您進行交易。 您怎樣才能擊敗這些大鱷？立刻使用TradeSharing的交易平台：",
+      "uncover": {
+        "title": "隱藏您的頭寸",
+        "subTitle": "防止加密貨幣交易所偵測到您的頭寸和交易價格。"
+      },
+      "bypass": {
+        "title": "繞過交易限制",
+        "subTitle": "避開未來交易上限和地區限制等傳統交易限制。"
+      },
+      "decentralize": {
+        "title": "訂單去中央化",
+        "subTitle": "阻止加密貨幣交易所追蹤您的交易歷史和策略。"
+      },
+      "lead": {
+        "title": "引領新的交易模式",
+        "subTitle": "利用無限個賬戶進行自動實時交易，享受無與倫比的交易效率。"
+      }
+    },
+    "FAQ": {
+      "title": "常問問題",
+      "questions": {
+        "1": {
+          "question": "我加入候補名單後, 甚麼時候可以進行交易？",
+          "answer": "我們很高興您加入了後補名單。 請耐心等候，我們現在正按TradeSharing購買力的增長速度接收用戶。當更多出租交易賬戶的用戶加入這個平台後，我們會邀請更多的賬戶租用者加入。"
+        },
+        "2": {
+          "question": "台灣和香港用戶能使用TradeSharing嗎？",
+          "answer": "沒問題, 我們歡迎台灣和香港的用戶使用TradeSharing。"
+        },
+        "3": {
+          "question": "我可不可以同時間租用多個幣安賬戶，並利用多個賬戶進行交易？",
+          "answer": "沒問題，只要您的賬戶有足夠的保證金, 便可以用無限個幣安賬戶進行交易。 您可以通過應用程式介面自動操作或TradeSharing的Dashboard手動操作已租用的賬戶。"
+        },
+        "4": {
+          "question": "TradeSharing會怎樣保障我的資金？",
+          "answer": "為確保閣下的交易利潤，每個想在TradeSharing租用賬戶的用戶都首先需要繳交保證金到託管金。如果您的交易策略能帶來利潤，TradeSharing將會從託管金中提取資金支付您的利潤，並消除交易對手風險。"
+        },
+        "5": {
+          "question": "為甚麼我要繳交保證金才能租用幣安賬戶？",
+          "answer": "當您租用幣安賬戶後，您需要繳交保證金才能動用交易賬戶裏的可用資金。不過，您仍需要為該賬戶的交易虧損負責。因此，為保障幣安賬戶主人的資金安全，您需要提供最高達賬戶金額100%的託管金。當您歸還的交易賬戶有虧損時, TradeSharing將能夠從託管金中提取資金來彌補交易虧損。"
+        },
+        "6": {
+          "question": "我的交易上限是多少？",
+          "answer": "您可以在租用賬戶的特定交易限額內進行交易。"
+        },
+        "7": {
+          "question": "我可以怎樣訪問已經租用了的幣安賬戶？",
+          "answer": "您可以通過應用程式介面或TradeSharing的Dashboard控制已租用的賬戶。您會獲得權限在租用的幣安賬戶上用任何貨幣進行交易。"
+        },
+        "8": {
+          "question": "我怎樣才能在TradeSharing租用幣安賬戶？",
+          "answer": "請加入我們的等候名單，幣安賬戶很快便會開放使用。"
+        }
+      }
+    },
+    "Footer": {
+      "rightsTitle": "版權 © 2022。 版權所有。"
+    }
+  }
+}

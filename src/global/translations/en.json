@@ -10,7 +10,8 @@
       },
       "languagesSwitcher": {
         "en": "English",
-        "ch": "Chinese"
+        "sch": "Simplified Chinese",
+        "tch": "Traditional Chinese"
       }
     },
     "Banner": {

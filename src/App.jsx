@@ -17,7 +17,8 @@ const App = () => {
   );
 
   const en = require('./global/translations/en.json');
-  const ch = require('./global/translations/ch.json');
+  const tch = require('./global/translations/tch.json'); // Traditional Chinese
+  const sch = require('./global/translations/sch.json'); // Simplified Chinese
 
   const howItWorksSectionRef = useRef();
   const marketplaceSectionRef = useRef();
@@ -27,7 +28,8 @@ const App = () => {
   i18n.use(initReactI18next).init({
     resources: {
       en,
-      ch,
+      tch,
+      sch,
     },
     lng: selectedLang,
     fallbackLng: 'en',
