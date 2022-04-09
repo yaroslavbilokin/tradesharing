@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import headerLogo from '../../global/media/header-logo.svg';
-import mobileLogo from '../../global/media/header-mobile-icon.svg';
-import burgerIcon from '../../global/media/burger-logo.svg';
-import closeIcon from '../../global/media/close-menu-icon.svg';
+import { ReactComponent as HeaderLogo } from '../../global/media/header-logo.svg';
+import { ReactComponent as MobileLogo } from '../../global/media/header-mobile-icon.svg';
+import { ReactComponent as BurgerIcon } from '../../global/media/burger-logo.svg';
+import { ReactComponent as CloseIcon } from '../../global/media/close-menu-icon.svg';
 import LanguageSwitcher from '../LanguageSwitcher';
 import useDesktopSize from '../../global/hooks/useDesktopSize';
 import MobileLanguageSwitcher from '../MobileLanguageSwitcher/MobileLanguageSwitcher';
@@ -63,7 +63,7 @@ const Header = ({
     <div className="header-container">
       <div className="nav-container">
         <div className="header-logo__container">
-          <img src={headerLogo} alt="header logo" />
+          <HeaderLogo />
         </div>
         <div
           className={`navigation-items__container ${
@@ -92,25 +92,25 @@ const Header = ({
   ) : (
     <div className="mobile-header__container">
       <div className="logo-container">
-        <img src={mobileLogo} alt="logo" />
+        <MobileLogo />
       </div>
       <div
         onClick={() => setIsMenuOpened(true)}
         className="burger-control__container"
       >
-        <img src={burgerIcon} alt="menu icon" />
+        <BurgerIcon />
       </div>
       <div className={`menu-body__container ${isMenuOpened ? 'active' : ''}`}>
         <div className="menu-body">
           <div className="menu-header">
             <div className="logo-container">
-              <img src={mobileLogo} alt="logo" />
+              <MobileLogo />
             </div>
             <div
               onClick={() => setIsMenuOpened(false)}
               className="menu-close__container"
             >
-              <img src={closeIcon} alt="close icon" />
+              <CloseIcon />
             </div>
           </div>
           <div className="menu-nav__container">

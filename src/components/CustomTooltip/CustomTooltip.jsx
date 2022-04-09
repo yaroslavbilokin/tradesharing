@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import Fade from '@mui/material/Fade';
-import icon from '../../global/media/tooltip-icon.svg';
+import { ReactComponent as Icon } from '../../global/media/tooltip-icon.svg';
 import './CustomTooltip.scss';
 
 const CustomTooltip = ({ text }) => {
@@ -25,7 +25,7 @@ const CustomTooltip = ({ text }) => {
       TransitionComponent={Fade}
       TransitionProps={{ timeout: 400 }}
     >
-      <img className="tooltip-img" src={icon} alt="tooltip icon" />
+      <Icon className="tooltip-img" />
     </LightTooltip>
   );
 };

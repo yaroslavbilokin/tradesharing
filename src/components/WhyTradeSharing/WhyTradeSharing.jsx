@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import uncoverIcon from '../../global/media/uncover-reason-icon.svg';
-import decentralizeIcon from '../../global/media/decentralize-reason-icon.svg';
-import bypassIcon from '../../global/media/bypass-reason-icon.svg';
-import leadIcon from '../../global/media/lead-reason-icon.svg';
+import { ReactComponent as UncoverIcon } from '../../global/media/uncover-reason-icon.svg';
+import { ReactComponent as DecentralizeIcon } from '../../global/media/decentralize-reason-icon.svg';
+import { ReactComponent as BypassIcon } from '../../global/media/bypass-reason-icon.svg';
+import { ReactComponent as LeadIcon } from '../../global/media/lead-reason-icon.svg';
 import './WhyTradeSharing.scss';
 
 const WhyTradeSharing = () => {
@@ -13,25 +13,25 @@ const WhyTradeSharing = () => {
       id: 0,
       title: t('WhyTradeSharing.uncover.title'),
       subTitle: t('WhyTradeSharing.uncover.subTitle'),
-      icon: uncoverIcon,
+      icon: <UncoverIcon />,
     },
     {
       id: 1,
       title: t('WhyTradeSharing.decentralize.title'),
       subTitle: t('WhyTradeSharing.decentralize.subTitle'),
-      icon: decentralizeIcon,
+      icon: <DecentralizeIcon />,
     },
     {
       id: 2,
       title: t('WhyTradeSharing.bypass.title'),
       subTitle: t('WhyTradeSharing.bypass.subTitle'),
-      icon: bypassIcon,
+      icon: <BypassIcon />,
     },
     {
       id: 3,
       title: t('WhyTradeSharing.lead.title'),
       subTitle: t('WhyTradeSharing.lead.subTitle'),
-      icon: leadIcon,
+      icon: <LeadIcon />,
     },
   ];
 
@@ -46,9 +46,7 @@ const WhyTradeSharing = () => {
       <div className="why-trade-sharing__reasons">
         {reasons.map((reason) => (
           <div key={reason.id} className="reason-container">
-            <div className="reason-icon__container">
-              <img src={reason.icon} alt="reason icon" />
-            </div>
+            <div className="reason-icon__container">{reason.icon}</div>
             <div className="reason-content">
               <div className="title">{reason.title}</div>
               <div className="subtitle">{reason.subTitle}</div>

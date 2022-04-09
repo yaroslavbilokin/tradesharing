@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
-import icon from '../../global/media/lang-switch-icon.svg';
-import selectedLangIcon from '../../global/media/selected-lang-icon.svg';
-import notSelectedLangIcon from '../../global/media/not-selected-lang-icon.svg';
+import { ReactComponent as Icon } from '../../global/media/lang-switch-icon.svg';
+import { ReactComponent as SelectedLangIcon } from '../../global/media/selected-lang-icon.svg';
+import { ReactComponent as NotSelectedLangIcon } from '../../global/media/not-selected-lang-icon.svg';
 import './LanguageSwitcher.scss';
 
 const LanguageSwitcher = ({ onLanguageChange, language }) => {
@@ -49,7 +49,7 @@ const LanguageSwitcher = ({ onLanguageChange, language }) => {
       <div onClick={handleClick} className="language-switcher__content">
         <div className="content-lang">{languagesStrategy[language]}</div>
         <div className={`content-control ${show ? 'active' : ''}`}>
-          <img src={icon} alt="switch icon" />
+          <Icon />
         </div>
       </div>
       <div className={`languages-body ${show ? 'active' : ''}`}>
@@ -61,12 +61,11 @@ const LanguageSwitcher = ({ onLanguageChange, language }) => {
           >
             <div className="language-title">{lang.name}</div>
             <div className="language-icon__container">
-              <img
-                src={
-                  language === lang.key ? selectedLangIcon : notSelectedLangIcon
-                }
-                alt="select icon"
-              />
+              {language === lang.key ? (
+                <SelectedLangIcon />
+              ) : (
+                <NotSelectedLangIcon />
+              )}
             </div>
           </div>
         ))}

@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { ReactComponent as TwitterIcon } from '../../global/media/twitter-icon.svg';
 import { ReactComponent as DiscordIcon } from '../../global/media/discord-icon.svg';
 import { ReactComponent as RedditIcon } from '../../global/media/reddit-icon.svg';
-import logo from '../../global/media/footer-logo.svg';
-import mobileLogo from '../../global/media/footer-mobile-logo.svg';
+import { ReactComponent as Logo } from '../../global/media/footer-logo.svg';
+import { ReactComponent as MobileLogo } from '../../global/media/footer-mobile-logo.svg';
 import './Footer.scss';
 import useDesktopSize from '../../global/hooks/useDesktopSize';
 
@@ -39,7 +39,7 @@ const Footer = ({
     <div className="footer-container">
       <div className="footer-content">
         <div className="footer-logo__container">
-          <img src={isDesktop ? logo : mobileLogo} alt="footer-logo" />
+          {isDesktop ? <Logo /> : <MobileLogo />}
         </div>
         <div className="footer-navigation__container">
           <div className="navigation-block">

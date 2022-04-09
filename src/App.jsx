@@ -1,15 +1,18 @@
+import React, { useEffect, useRef, useState, Suspense } from 'react';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import './App.scss';
-import { useEffect, useRef, useState } from 'react';
 import { getFromLocalStorage, setToLocalStorage } from './global/helpers';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import WhyTradeSharing from './components/WhyTradeSharing';
-import Banner from './components/Banner';
-import HowItWorks from './components/HowItWorks';
-import Marketplace from './components/Marketplace';
-import FAQ from './components/FAQ';
+import './App.scss';
+
+const Header = React.lazy(() => import('./components/Header'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const WhyTradeSharing = React.lazy(() =>
+  import('./components/WhyTradeSharing')
+);
+const Banner = React.lazy(() => import('./components/Banner'));
+const HowItWorks = React.lazy(() => import('./components/HowItWorks'));
+const Marketplace = React.lazy(() => import('./components/Marketplace'));
+const FAQ = React.lazy(() => import('./components/FAQ'));
 
 const App = () => {
   const [selectedLang, setSelectedLang] = useState(
@@ -79,35 +82,37 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <Header
-        onHowItWorksClick={handleScrollToHowItWorks}
-        onFAQClick={handleScrollToFAQ}
-        language={selectedLang}
-        onLanguageChange={handleLanguageChange}
-      />
-      <div className="app-content">
-        <Banner />
-        <div ref={howItWorksSectionRef}>
-          <HowItWorks />
-        </div>
-        <div ref={marketplaceSectionRef}>
-          <Marketplace />
-        </div>
-        <div ref={whyTradeSharingRef}>
-          <WhyTradeSharing />
-        </div>
-        <div ref={faqSectionRef}>
-          <FAQ />
-        </div>
-        <Footer
+    <Suspense fallback={<div>Loading...</div>}>
+      <div className="app-container">
+        <Header
           onHowItWorksClick={handleScrollToHowItWorks}
-          onMarketplaceClick={handleScrollToMarketplace}
-          onWhyTradeSharingClick={handleScrollToWhyTradeSharing}
           onFAQClick={handleScrollToFAQ}
+          language={selectedLang}
+          onLanguageChange={handleLanguageChange}
         />
+        <div className="app-content">
+          <Banner />
+          <div ref={howItWorksSectionRef}>
+            <HowItWorks />
+          </div>
+          <div ref={marketplaceSectionRef}>
+            <Marketplace />
+          </div>
+          <div ref={whyTradeSharingRef}>
+            <WhyTradeSharing />
+          </div>
+          <div ref={faqSectionRef}>
+            <FAQ />
+          </div>
+          <Footer
+            onHowItWorksClick={handleScrollToHowItWorks}
+            onMarketplaceClick={handleScrollToMarketplace}
+            onWhyTradeSharingClick={handleScrollToWhyTradeSharing}
+            onFAQClick={handleScrollToFAQ}
+          />
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
 

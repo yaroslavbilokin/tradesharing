@@ -152,8 +152,14 @@
       .banner-gif__container {
         width: 100%;
 
-        img {
+        video {
           width: 100%;
+        }
+
+        &.mobile {
+          video {
+            height: 200px;
+          }
         }
       }
     }

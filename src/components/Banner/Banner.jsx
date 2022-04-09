@@ -1,11 +1,26 @@
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import binanceIcon from '../../global/media/binance-statistic-image.svg';
-import tetherIcon from '../../global/media/tether-statistic-icon.svg';
-import bannerGif from '../../global/media/banner.gif';
+import { ReactComponent as BinanceIcon } from '../../global/media/binance-statistic-image.svg';
+import { ReactComponent as TetherIcon } from '../../global/media/tether-statistic-icon.svg';
+import bannerVideo from '../../global/media/banner-video.webm';
+import bannerVideoMp4 from '../../global/media/banner-video.mp4';
 import './Banner.scss';
 
 const Banner = () => {
+  const [isMobile, setIsMobile] = useState(true);
+
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 450);
+      };
+      window.addEventListener('resize', handleResize);
+      handleResize();
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
 
   const getPageHighlightedTitle = (title) => {
     const titleParts = title.split('/');
@@ -39,15 +54,19 @@ const Banner = () => {
           </a>
         </div>
         <div className="right-block">
-          <div className="banner-gif__container">
-            <img src={bannerGif} alt="banner gif" />
+          <div className={`banner-gif__container ${isMobile ? 'mobile' : ''}`}>
+            <video loop autoPlay muted playsInline>
+              <source src={bannerVideoMp4} type="video/mp4" />
+              <source src={bannerVideo} type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
       <div className="statistic-container">
         <div className="statistic-block">
           <div className="statistic-block__icon">
-            <img src={binanceIcon} alt="binance-icon" />
+            <BinanceIcon />
           </div>
           <div className="statistic-block__content">
             <div className="value">534</div>
@@ -58,7 +77,7 @@ const Banner = () => {
         </div>
         <div className="statistic-block">
           <div className="statistic-block__icon">
-            <img src={tetherIcon} alt="tether icon" />
+            <TetherIcon />
           </div>
           <div className="statistic-block__content">
             <div className="value">$122,673,328 USDT</div>
