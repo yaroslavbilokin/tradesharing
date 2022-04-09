@@ -11,11 +11,11 @@ const Banner = () => {
     const titleParts = title.split('/');
     if (titleParts.length === 3) {
       return (
-        <span className="title-content">
+        <div className="title-content">
           <span className="usual">{titleParts[0]}</span>
           <span className="highlighted">{titleParts[1]}</span>
           <span className="usual">{titleParts[2]}</span>
-        </span>
+        </div>
       );
     }
     return (
