@@ -5,6 +5,7 @@ import { ReactComponent as TetherIcon } from '../../global/media/tether-statisti
 import bannerVideo from '../../global/media/banner-video.webm';
 import bannerVideoMp4 from '../../global/media/banner-video.mp4';
 import './Banner.scss';
+import { JOIN_WAITLIST_HREF } from '../../global/constants';
 
 const Banner = () => {
   const [isMobile, setIsMobile] = useState(true);
@@ -47,7 +48,12 @@ const Banner = () => {
           <div className="title-container">
             {getPageHighlightedTitle(t('Banner.title'))}
           </div>
-          <a href="asdasd" className="join-waitlist-btn__container">
+          <a
+            href={JOIN_WAITLIST_HREF}
+            target="_blank"
+            rel="noreferrer"
+            className="join-waitlist-btn__container"
+          >
             <div className="join-waitlist">
               {t('Banner.joinWaitlistBtnTitle')}
             </div>

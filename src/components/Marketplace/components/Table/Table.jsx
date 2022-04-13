@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './Table.scss';
 import CustomTooltip from '../../../CustomTooltip';
+import { RENT_ACCOUNT_HREF } from '../../../../global/constants';
 
 const Table = () => {
   const { t } = useTranslation();
@@ -75,49 +76,58 @@ const Table = () => {
 
   const rowsData = [
     {
-      userName: 'Tom 2971',
+      userName: '***du2190',
       exchange: 'Binance',
       crypto: 'USDT',
-      limits: '$5k - $12k',
-      escrow: '$2k',
+      limits: '$20K - $23K',
+      escrow: '100%',
       rentRate: '0.0125%',
-      href: '#',
+      href: RENT_ACCOUNT_HREF,
     },
     {
-      userName: 'Tom 2972',
+      userName: '***ca1083',
       exchange: 'Binance',
       crypto: 'BUSD',
-      limits: '$5k - $12k',
-      escrow: '$2k',
-      rentRate: '0.0125%',
-      href: '#',
+      limits: '$1K - $4K',
+      escrow: '100%',
+      rentRate: '0.0127%',
+      href: RENT_ACCOUNT_HREF,
     },
     {
-      userName: 'Tom 2973',
+      userName: '***am907',
       exchange: 'Binance',
       crypto: 'BUSD',
-      limits: '$5k - $12k',
-      escrow: '$2k',
-      rentRate: '0.0125%',
-      href: '#',
+      limits: '$2K - $4K',
+      escrow: '100%',
+      rentRate: '0.0128%',
+      href: RENT_ACCOUNT_HREF,
     },
     {
-      userName: 'Tom 2974',
+      userName: '***ti102',
       exchange: 'Binance',
-      crypto: 'BUSD',
-      limits: '$5k - $12k',
-      escrow: '$2k',
-      rentRate: '0.0125%',
-      href: '#',
+      crypto: 'USDT',
+      limits: '$15K - $17K',
+      escrow: '100%',
+      rentRate: '0.0130%',
+      href: RENT_ACCOUNT_HREF,
     },
     {
-      userName: 'Tom 2975',
+      userName: '***ap899',
       exchange: 'Binance',
       crypto: 'BUSD',
-      limits: '$5k - $12k',
-      escrow: '$2k',
-      rentRate: '0.0125%',
-      href: '#',
+      limits: '$3K - $4K',
+      escrow: '100%',
+      rentRate: '0.0133%',
+      href: RENT_ACCOUNT_HREF,
+    },
+    {
+      userName: '***co919',
+      exchange: 'Binance',
+      crypto: 'USDT',
+      limits: '$5K - $8K',
+      escrow: '100%',
+      rentRate: '0.0135%',
+      href: RENT_ACCOUNT_HREF,
     },
   ];
 
@@ -135,7 +145,12 @@ const Table = () => {
               <td className="table-row__cell">{row.escrow}</td>
               <td className="table-row__cell">{row.rentRate}</td>
               <td className="table-row__cell">
-                <a className="rent-account-btn__container" href={row.href}>
+                <a
+                  className="rent-account-btn__container"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={row.href}
+                >
                   <div className="rent-account-btn">
                     {t('Marketplace.table.rentAccountBtnTitle')}
                   </div>

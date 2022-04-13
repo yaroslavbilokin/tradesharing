@@ -9,6 +9,7 @@ import LanguageSwitcher from '../LanguageSwitcher';
 import useDesktopSize from '../../global/hooks/useDesktopSize';
 import MobileLanguageSwitcher from '../MobileLanguageSwitcher/MobileLanguageSwitcher';
 import './Header.scss';
+import { JOIN_WAITLIST_HREF } from '../../global/constants';
 
 const Header = ({
   onHowItWorksClick,
@@ -86,7 +87,14 @@ const Header = ({
           language={language}
           onLanguageChange={onLanguageChange}
         />
-        <div className="waitlist-btn">{t('Header.joinWaitlist')}</div>
+        <a
+          href={JOIN_WAITLIST_HREF}
+          target="_blank"
+          rel="noreferrer"
+          className="waitlist-btn"
+        >
+          {t('Header.joinWaitlist')}
+        </a>
       </div>
     </div>
   ) : (

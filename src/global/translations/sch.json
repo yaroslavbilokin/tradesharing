@@ -1,7 +1,7 @@
 {
   "translation": {
     "Header": {
-      "joinWaitlist": "加入后补名单",
+      "joinWaitlist": "加入候补名单",
       "navigationItems": {
         "howItWorks": "如何使用",
         "marketPlace": "市场",
@@ -16,7 +16,7 @@
     },
     "Banner": {
       "title": "租用无交易次数上限的 /币安账户/ 並把你的交易最大化",
-      "joinWaitlistBtnTitle": "加入后补名单",
+      "joinWaitlistBtnTitle": "加入候补名单",
       "statistic": {
         "binanceAccountsTitle": "币安账户",
         "purchasingPowerTitle": "每月购买力"
@@ -27,7 +27,7 @@
       "steps": {
         "1": {
           "title": "1. 找寻账户主人",
-          "subTitle": "通过筛选，在市场上找寻符合您需要的账户。"
+          "subTitle": "在市场上筛选並找寻符合您需要的账户。"
         },
         "2": {
           "title": "2. 缴交托管金",
@@ -100,7 +100,7 @@
       "questions": {
         "1": {
           "question": "我加入候补名单后, 什么时候可以进行交易？",
-          "answer": "我们很高兴您加入了后补名单。 请耐心等候，我们现在正按TradeSharing购买力的增长速度接收用户。当更多出租交易账户的用户加入这个平台后，我们会邀请更多的账户租用者加入。"
+          "answer": "我们很高兴您加入了候补名单。请耐心等候，我们现在正按TradeSharing购买力的增长速度接收用户。当更多出租交易账户的用户加入这个平台后，我们会邀请更多的账户租用者加入。"
         },
         "2": {
           "question": "中国用户能使用TradeSharing吗？",
@@ -108,7 +108,7 @@
         },
         "3": {
           "question": "我可不可以同时间租用多个币安账户，并利用多个账户进行交易？",
-          "answer": "没问题，只要您的账户有足够的保证金, 便可以用无限个币安账户进行交易。 您可以通过应用程式介面自动操作或TradeSharing的Dashboard手动操作已租用的账户。"
+          "answer": "没问题，只要您的账户有足够的保证金, 便可以用无限个币安账户进行交易。 您可以通过应用程序接口自动操作，或TradeSharing的Dashboard手动操作已租用的账户。"
         },
         "4": {
           "question": "TradeSharing会怎样保障我的资金？",
@@ -124,11 +124,11 @@
         },
         "7": {
           "question": "我可以怎样访问已经租用了的币安账户？",
-          "answer": "您可以通过应用程式介面或TradeSharing的Dashboard控制已租用的账户。您会获得权限在租用的币安账户上用任何货币进行交易。"
+          "answer": "您可以通过应用程序接口 或TradeSharing的Dashboard控制已租用的账户。您会获得权限在租用的币安账户上用任何货币进行交易。"
         },
         "8": {
           "question": "我怎样才能在TradeSharing租用币安账户？",
-          "answer": "请加入我们的等候名单，币安账户很快便会开放使用。"
+          "answer": "请加入我们的候补名单，币安账户很快便会开放使用。"
         }
       }
     },
